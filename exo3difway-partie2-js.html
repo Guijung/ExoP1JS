@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8"/>
+    <title>JS-Partie2-Exo3</title>
+</head>
+<body>
+    <script>
+        var number = prompt('Entrez un nombre');
+        // Si ce n'est pas un nombre
+        if (isNaN(number) == true) {
+            alert('Ceci n\'est pas un nombre');
+        }else {
+            var numberInt = parseInt(number);
+            // Si le nombre saisi est un nombre entier
+            if (number == numberInt) {
+                // On récupère le reste de la division par 2
+                var rest = number % 2;
+                if (rest == 0) {
+                    alert('C\'est un nombre pair');
+                }else {
+                    alert('C\'est un nombre impair');
+                }
+            }else {
+                alert('Les nombres à virgule ne sont pas acceptés');
+            }
+        }
+    </script>
+</body>
+</html>
